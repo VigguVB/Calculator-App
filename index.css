@@ -119,25 +119,3 @@ body{
 
 }
 
-@media screen and (max-width: 502px) {
-    body {
-      background-color: rgb(123, 123, 230);
-    }
-    .number-btn{
-        font-size: 20px;
-        width: 50px;
-        height: 30px;
-    }
-    .symbol-btn{
-        font-size: 20px;
-        width: 50px;
-        height: 30px;
-    }
-    .symbol-btnspl{
-        font-size: 20px;
-        width: 50px;
-        height: 30px;
-    }.mainbody{
-        height: 430px;
-    }
-  }
