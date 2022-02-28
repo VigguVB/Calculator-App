@@ -76,6 +76,7 @@ body{
 }
 .number-btn:hover{
     background-color: azure;
+    border: 2px groove #9cb9b9;
 }
 .subcontainer-symbols{
     width: 39%;
@@ -98,4 +99,45 @@ body{
 }
 .symbol-btn:hover{
     background-color: azure;
+    border: 2px groove hsl(250, 5%, 55%);
 }
+.symbol-btnspl{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 195px;
+    margin: 0.1%;
+    height: 70px;
+    float: left; 
+    background-color: #e75824;
+}
+.symbol-btnspl:hover{
+    background-color: azure;
+    border: 2px groove #e75824;
+
+}
+
+@media screen and (max-width: 502px) {
+    body {
+      background-color: rgb(123, 123, 230);
+    }
+    .number-btn{
+        font-size: 20px;
+        width: 50px;
+        height: 30px;
+    }
+    .symbol-btn{
+        font-size: 20px;
+        width: 50px;
+        height: 30px;
+    }
+    .symbol-btnspl{
+        font-size: 20px;
+        width: 50px;
+        height: 30px;
+    }.mainbody{
+        height: 430px;
+    }
+  }
