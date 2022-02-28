@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+          Calculator 
+        </title>
+        <link rel="icon" href="https://i.ibb.co/Q8B83dz/Calculator-icon.png" alt="calculator-logo">
+        <link href="./index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <div class="mainbody">
+            <div class="container1">
+                <p id="symboldisplay" class="operator"></p>
+                <div id="subdisplay" class="subdisplay">0</div>
+                <div id="maindisplay" class="maindisplay"></div>
+            </div>
+            <div class="container2">
+                <div class="buttons-container">
+                    <div class="subContainer-button">
+                        <button onclick="seven()" class="number-btn">7</button>
+                        <button onclick="eight()" class="number-btn">8</button>
+                        <button onclick="nine()" class="number-btn">9</button>
+                        <button onclick="four()" class="number-btn">4</button>
+                        <button onclick="five()" class="number-btn">5</button>
+                        <button onclick="six()" class="number-btn">6</button>
+                        <button onclick="one()" class="number-btn">1</button>
+                        <button onclick="two()" class="number-btn">2</button>
+                        <button onclick="three()" class="number-btn">3</button>
+                        <button onclick="zero()" class="number-btn">0</button>
+                        <button onclick="doublezero()" class="number-btn">00</button>
+                        <button onclick="decimals()" class="number-btn">.</button>
+                    </div>
+                    <div class="subcontainer-symbols">
+                        <button onclick="back()" style="background-color: #f76f3e;" class="symbol-btn"><i class="fa fa-caret-left"></i></button>
+                        <button onclick="ac()" style="background-color: #f76f3e;" class="symbol-btn">AC</button>
+                        <button onclick="percentage()" class="symbol-btn">%</button>
+                        <button onclick="divide()" class="symbol-btn">÷</button>
+                        <button onclick="minus()" class="symbol-btn">-</button>
+                        <button onclick="multiply()" class="symbol-btn">x</button>
+                        <button onclick="plus()" class="symbol-btn">+</button>
+                        <button onclick="equals()" class="symbol-btn">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

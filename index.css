@@ -1,0 +1,101 @@
+body{
+    width: 100%;
+    margin: auto;
+}
+.mainbody{
+    width: 80%;
+    height: 650px;
+    margin-top: 2%;
+    margin-left: 10%;
+    background-color: whitesmoke;
+    box-shadow: 1px 2px 12px black;
+
+}
+.container1{
+    width: 98%;
+    margin: 1%;
+    height: 250px;
+}
+.subdisplay{
+    width: 93%;
+    margin-top: 5%;
+    margin-left: 2%;
+    height: 40px;
+    border-bottom: 2px groove black;
+    text-align: right;
+    font-size: 22px;
+    border-bottom: 2px solid green;
+}
+.maindisplay{
+    width: 93%;
+    margin-top: 1%;
+    margin-left: 2%;
+    height: 80px;
+    text-align: right;
+    font-size: 50px;
+    border-bottom: 2px solid green;
+}
+.container2{
+    width: 98%;
+    margin: 1%;
+    height: 360px;
+
+}
+.operator{
+    width: 20px;
+    height: 20px;
+    border: 2px solid blue;
+    margin-left: 2%;
+    visibility: visible;
+}
+.buttons-container{
+    width: 90%;
+    height: 315px;
+    margin-left: 5%;
+    margin-top: 2%;
+
+}
+.subContainer-button{
+    width: 55%;
+    margin-left: 2%;
+    height: 290px;
+    margin-top: 1%;
+    float: left;
+}
+.number-btn{
+    background-color: #9cb9b9;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 192px;
+    margin: 0.1%;
+    height: 70px;
+    float: left;
+}
+.number-btn:hover{
+    background-color: azure;
+}
+.subcontainer-symbols{
+    width: 39%;
+    height: 290px;
+    margin-top: 1%;
+    float: left;
+    margin-left: 2%;
+}
+.symbol-btn{
+    background-color: hsl(250, 5%, 55%);
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 195px;
+    margin: 1%;
+    height: 70px;
+    float: left; 
+}
+.symbol-btn:hover{
+    background-color: azure;
+}
