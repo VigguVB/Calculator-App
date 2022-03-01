@@ -42,11 +42,12 @@ body{
 
 }
 .operator{
-    width: 20px;
-    height: 20px;
-    border: 2px solid blue;
+    width: 30px;
+    height: 30px;
     margin-left: 2%;
-    visibility: visible;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
 }
 .buttons-container{
     width: 90%;

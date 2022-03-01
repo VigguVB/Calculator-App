@@ -18,11 +18,14 @@ function plus() {
     } else if (symbol == '-') {
         document.getElementById('subdisplay').innerText = numberFromSub - numberFromMain;
         document.getElementById('maindisplay').innerText = ''
-    }else if (symbol == 'x') {
+    } else if (symbol == 'x') {
         document.getElementById('subdisplay').innerText = numberFromSub * numberFromMain;
         document.getElementById('maindisplay').innerText = ''
     } else if (symbol == '/') {
         document.getElementById('subdisplay').innerText = numberFromSub / numberFromMain;
+        document.getElementById('maindisplay').innerText = ''
+    } else if (symbol == "=") {
+        document.getElementById('subdisplay').innerText = numberFromMain;
         document.getElementById('maindisplay').innerText = ''
     }
 
@@ -42,14 +45,17 @@ function minus() {
     } else if (symbol == '-') {
         document.getElementById('subdisplay').innerText = numberFromSub - numberFromMain;
         document.getElementById('maindisplay').innerText = ''
-    }else if (symbol == "+") {
+    } else if (symbol == "+") {
         document.getElementById('subdisplay').innerText = numberFromSub + numberFromMain;
         document.getElementById('maindisplay').innerText = ''
     } else if (symbol == '/') {
         document.getElementById('subdisplay').innerText = numberFromSub / numberFromMain;
         document.getElementById('maindisplay').innerText = ''
-    }else if (symbol == 'x') {
+    } else if (symbol == 'x') {
         document.getElementById('subdisplay').innerText = numberFromSub * numberFromMain;
+        document.getElementById('maindisplay').innerText = ''
+    } else if (symbol == "=") {
+        document.getElementById('subdisplay').innerText = numberFromMain;
         document.getElementById('maindisplay').innerText = ''
     }
 }
@@ -63,10 +69,16 @@ function multiply() {
     document.getElementById('symboldisplay').innerText = 'x';
     if (numberFromSub === 0) {
         document.getElementById('subdisplay').innerText = numberFromMain;
-        document.getElementById('maindisplay').innerText = ''
+        document.getElementById('maindisplay').innerText = "";
+    } else if (symbol != "%" && numberFromMain === 0) {
+        document.getElementById('subdisplay').innerText = 0;
+        document.getElementById('maindisplay').innerText = 0;
     } else if (symbol == 'x') {
         document.getElementById('subdisplay').innerText = numberFromSub * numberFromMain;
-        document.getElementById('maindisplay').innerText = ''
+        document.getElementById('maindisplay').innerText = '';
+    } else if (symbol == 'x' && numberFromMain === 0 || numberFromSub === 0) {
+        document.getElementById('maindisplay').innerText = 0;
+        document.getElementById('subdisplay').innerText = 0;
     } else if (symbol == '/') {
         document.getElementById('subdisplay').innerText = numberFromSub / numberFromMain;
         document.getElementById('maindisplay').innerText = ''
@@ -76,6 +88,11 @@ function multiply() {
     } else if (symbol == '-') {
         document.getElementById('subdisplay').innerText = numberFromSub - numberFromMain;
         document.getElementById('maindisplay').innerText = ''
+    } else if (symbol == "=") {
+        document.getElementById('subdisplay').innerText = numberFromMain;
+        document.getElementById('maindisplay').innerText = '';
+
+
     }
 }
 function divide() {
@@ -93,12 +110,16 @@ function divide() {
         document.getElementById('maindisplay').innerText = ''
     } else if (symbol == 'x') {
         document.getElementById('subdisplay').innerText = numberFromSub * numberFromMain;
-        document.getElementById('maindisplay').innerText = ''
+        document.getElementById('maindisplay').innerText = '';
+
     } else if (symbol == '+') {
         document.getElementById('subdisplay').innerText = numberFromSub + numberFromMain;
         document.getElementById('maindisplay').innerText = ''
     } else if (symbol == '-') {
         document.getElementById('subdisplay').innerText = numberFromSub - numberFromMain;
+        document.getElementById('maindisplay').innerText = ''
+    } else if (symbol == "=") {
+        document.getElementById('subdisplay').innerText = numberFromMain;
         document.getElementById('maindisplay').innerText = ''
     }
 }
@@ -110,10 +131,10 @@ function percentage() {
     var symbol = document.getElementById('symboldisplay').innerText;
     document.getElementById('symboldisplay').innerText = '%';
 
-    
-        document.getElementById('subdisplay').innerText = numberFromSub * numberFromMain/100;
-        document.getElementById('maindisplay').innerText = ''
-    
+
+    document.getElementById('subdisplay').innerText = numberFromSub * numberFromMain / 100;
+    document.getElementById('maindisplay').innerText = ''
+
 
 }
 function equals() {
@@ -124,24 +145,29 @@ function equals() {
     var symbol = document.getElementById('symboldisplay').innerText;
     document.getElementById('symboldisplay').innerText = '=';
 
-    if (symbol == '+' && numberFromMain>0) {
+    if (symbol == '+' && numberFromMain > 0) {
         document.getElementById('subdisplay').innerText = numberFromSub + numberFromMain;
-        document.getElementById('maindisplay').innerText = "=" + numberFromSub
-    }else if(symbol == '-' && numberFromMain>0) {
+        document.getElementById('maindisplay').innerText = "=" + numberFromSub;
+
+    } else if (symbol == '-' && numberFromMain > 0) {
         document.getElementById('subdisplay').innerText = numberFromSub - numberFromMain;
         document.getElementById('maindisplay').innerText = "=" + numberFromSub;
-    }else if(symbol == 'x' && numberFromMain>0) {
+    } else if (symbol == 'x' && numberFromMain !== 0) {
         document.getElementById('subdisplay').innerText = numberFromSub * numberFromMain;
-         document.getElementById('maindisplay').innerText = "=" + numberFromSub;
-    }else if(symbol == '/' && numberFromMain>0) {
+        document.getElementById('maindisplay').innerText = "=" + numberFromSub;
+    } else if (symbol == 'x' && numberFromMain === 0 || numberFromSub === 0) {
+        document.getElementById('maindisplay').innerText = 0;
+        document.getElementById('subdisplay').innerText = 0
+
+    } else if (symbol == '/' && numberFromMain > 0) {
         document.getElementById('subdisplay').innerText = numberFromSub / numberFromMain;
         document.getElementById('maindisplay').innerText = "=" + numberFromSub;
     }
 
-var b = document.getElementById('subdisplay').innerText;
-var numberFromSub = Number(b);
-document.getElementById('maindisplay').innerText = numberFromSub;
- }
+    var b = document.getElementById('subdisplay').innerText;
+    var numberFromSub = Number(b);
+    document.getElementById('maindisplay').innerText = numberFromSub;
+}
 
 
 function one() {
@@ -173,10 +199,20 @@ function nine() {
     document.getElementById('maindisplay').innerText += "9"
 }
 function doublezero() {
-    document.getElementById('maindisplay').innerText += "00"
+    var a = document.getElementById('maindisplay').innerText;
+    var includedecimal = a.includes(".")
+    if (a !== "" || includedecimal) {
+        document.getElementById('maindisplay').innerText += "00"
+    }
 }
 function zero() {
-    document.getElementById('maindisplay').innerText += "0"
+    var a = document.getElementById('maindisplay').innerText;
+    var numberFromMain = Number(a);
+    var includedecimal = a.includes(".")
+    if (a === "" || numberFromMain !== 0 || includedecimal) {
+        document.getElementById('maindisplay').innerText += "0"
+    }
+
 }
 function decimals() {
     var a = document.getElementById('maindisplay').innerText;
@@ -186,16 +222,16 @@ function decimals() {
     }
 
 }
-function ac(){
+function ac() {
     document.getElementById('maindisplay').innerText = ""
     document.getElementById('subdisplay').innerText = 0;
 
 }
-function back(){
+function back() {
     var a = document.getElementById('maindisplay').innerText;
     var len = a.length;
-    var freshlen = len-1;
+    var freshlen = len - 1;
     var backed = a.slice(0, freshlen)
     document.getElementById('maindisplay').innerText = backed;
-   
+
 }
