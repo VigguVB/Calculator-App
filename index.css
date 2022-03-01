@@ -129,3 +129,22 @@ body{
 
 }
 
+@media screen and (max-width: 500px) {
+
+.number-btn{
+    width: 60px;
+    height: 40px;
+}
+  .symbol-btn{
+    width: 60px;
+    height: 40px;
+
+  }
+  .symbol-btnspl{
+    width: 60px;
+    height: 40px;
+  }
+  .subContainer-button{
+
+  }
+}
