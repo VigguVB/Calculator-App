@@ -7,8 +7,8 @@ body{
     height: 650px;
     margin-top: 2%;
     margin-left: 10%;
-    background-color: whitesmoke;
-    box-shadow: 1px 2px 12px black;
+    background-color: rgba(0, 0, 0, 0.979);
+    box-shadow: 1px 2px 12px hsla(0, 0%, 0%, 0.363);
 
 }
 .container1{
@@ -25,6 +25,7 @@ body{
     text-align: right;
     font-size: 22px;
     border-bottom: 2px solid green;
+    color: white;
 }
 .maindisplay{
     width: 93%;
@@ -34,6 +35,7 @@ body{
     text-align: right;
     font-size: 50px;
     border-bottom: 2px solid green;
+    color: white;
 }
 .container2{
     width: 98%;
@@ -48,6 +50,7 @@ body{
     text-align: center;
     font-size: 25px;
     font-weight: 600;
+    color: white;
 }
 .buttons-container{
     width: 90%;
@@ -64,20 +67,22 @@ body{
     float: left;
 }
 .number-btn{
-    background-color: #9cb9b9;
+    background-color: #181717;
     text-align: center;
     font-size: 35px;
-    color: black;
+    color: white;
     border: none;
     border-radius: 5px;
     width: 192px;
     margin: 0.1%;
     height: 70px;
     float: left;
+    box-shadow: 1px 1px 12px whitesmoke;
 }
 .number-btn:hover{
-    background-color: azure;
-    border: 2px groove #9cb9b9;
+    background-color: hsla(120, 91%, 34%, 0.631);
+    border: 2px groove green;
+    
 }
 .subcontainer-symbols{
     width: 39%;
@@ -87,36 +92,40 @@ body{
     margin-left: 2%;
 }
 .symbol-btn{
-    background-color: hsl(250, 5%, 55%);
+    background-color: #181717;
     text-align: center;
     font-size: 35px;
-    color: black;
+    color: white;
     border: none;
     border-radius: 5px;
     width: 195px;
     margin: 0.1%;
     height: 70px;
-    float: left; 
+    float: left;
+    box-shadow: 1px 1px 12px whitesmoke;
+ 
 }
 .symbol-btn:hover{
-    background-color: azure;
-    border: 2px groove hsl(250, 5%, 55%);
+    background-color: hsla(120, 91%, 34%, 0.631);
+    border: 2px groove green
 }
 .symbol-btnspl{
     text-align: center;
     font-size: 35px;
-    color: black;
+    color: white;
     border: none;
     border-radius: 5px;
     width: 195px;
     margin: 0.1%;
     height: 70px;
     float: left; 
-    background-color: #e75824;
+    background-color: #181717;
+    box-shadow: 1px 1px 12px whitesmoke;
+
 }
 .symbol-btnspl:hover{
-    background-color: azure;
-    border: 2px groove #e75824;
+    background-color: hsla(120, 91%, 34%, 0.631);
+    border: 3px groove green;
 
 }
 
