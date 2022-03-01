@@ -129,22 +129,28 @@ body{
 
 }
 
-@media screen and (max-width: 500px) {
-
+@media only screen and (max-width: 400px) {
+body{
+    background-color: aqua;
+}
 .number-btn{
-    width: 60px;
-    height: 40px;
+    width: 120px;
+
 }
   .symbol-btn{
-    width: 60px;
-    height: 40px;
+    width: 125px;
 
   }
   .symbol-btnspl{
-    width: 60px;
-    height: 40px;
+    width: 125px;
   }
-  .subContainer-button{
-
+  .mainbody{
+      height: 700px;
   }
+  
+.container2 {
+    width: 98%;
+    margin: 1%;
+    height: 390px;
+}
 }
