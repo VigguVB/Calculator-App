@@ -128,7 +128,32 @@ body{
     border: 3px groove green;
 
 }
-
+@media only screen and (max-width: 1490px){
+    .number-btn{
+        width: 180px;
+    
+    }
+}
+@media only screen and (max-width: 1400px){
+    .symbol-btn{
+        width: 180px;
+    }
+    .symbol-btnspl{
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .number-btn{
+        width: 155px;
+    
+    }
+    .symbol-btn{
+        width: 155px;
+    }
+    .symbol-btnspl{
+        width: 155px;
+    }
+}
 @media only screen and (max-width: 985px) {
 
 .number-btn{
